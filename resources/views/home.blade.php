@@ -2,15 +2,11 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-6">
             <div class="panel panel-default">
-                <div class="panel-heading">@lang('quickadmin.qa_dashboard')</div>
+                <div class="panel-heading">Recently added companies</div>
 
-                <div class="panel-body">
-                    @lang('quickadmin.qa_dashboard_text')
-                </div>
-                <div class="panel-body table-responsive col-md-6">
-                    <h3>Recently added companies</h3>
+                <div class="panel-body table-responsive">
                     <table class="table table-bordered table-striped ajaxTable">
                         <thead>
                         <tr>
@@ -41,8 +37,13 @@
                         @endforeach
                     </table>
                 </div>
-                <div class="panel-body table-responsive col-md-6">
-                    <h3>Recently added Employees</h3>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Recently added Employees</div>
+
+                <div class="panel-body table-responsive">
                     <table class="table table-bordered table-striped ajaxTable">
                         <thead>
                         <tr>
